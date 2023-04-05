@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class HealthSystem : MonoBehaviour
 {
+    public int Hp = 100;
+    [SerializeField] GameObject target;
     // Start is called before the first frame update
     void Start()
     {

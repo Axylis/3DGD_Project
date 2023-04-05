@@ -41,14 +41,14 @@ public class Gunshot : MonoBehaviour
                 {
                     Debug.Log("Enemy shot");
                 }
-                DisableLasers();
+                StartCoroutine(DisableLasers());
             }
         }
         else
         {
             //sets end position 1000 units away from start
             lr.SetPosition(1, this.transform.forward*1000);
-            DisableLasers();
+            StartCoroutine(DisableLasers());
         }
     }
     IEnumerator DisableLasers()

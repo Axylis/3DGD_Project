@@ -6,6 +6,7 @@ public class MouseAim : MonoBehaviour
 {
     [SerializeField] LayerMask ground;
     private Camera cam;
+    Vector3 aimLocation;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,7 +39,8 @@ public class MouseAim : MonoBehaviour
 
     private (bool success, Vector3 position) GetMousePosition()
     {
-        var ray = cam.ScreenPointToRay(Input.mousePosition);
+        aimLocation = new Vector3(Input.mousePosition.x, Input.mousePosition.y + 0.35f, Input.mousePosition.z);
+        var ray = cam.ScreenPointToRay(aimLocation);
 
             if (Physics.Raycast(ray, out var hitInfo, Mathf.Infinity, ground))
             {
