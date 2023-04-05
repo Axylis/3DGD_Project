@@ -632,7 +632,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 999a58061c9ebeb43b5bba377244a265, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HPIndicator: {fileID: 0}
+  HPIndicator: {fileID: 1530478865}
   maxHP: 100
 --- !u!1 &963194225
 GameObject:
@@ -1187,7 +1187,7 @@ GameObject:
   - component: {fileID: 1530478866}
   - component: {fileID: 1530478865}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: Player HP Indicator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
