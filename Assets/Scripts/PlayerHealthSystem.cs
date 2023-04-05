@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerHealthSystem : MonoBehaviour
 {
+    [SerializeField] Text HPIndicator;
     public float maxHP = 100;
     float currentHP;
     float damage;
@@ -17,10 +18,11 @@ public class PlayerHealthSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        HPIndicator.text = "Player HP: " + currentHP;
         DeathCheck();
     }
 
-    public void Damage(int damage)
+    public void Damage(float damage)
     {
         currentHP -= damage;
     }

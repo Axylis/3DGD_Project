@@ -7,7 +7,7 @@ public class EnemyAI : MonoBehaviour
     //general behaviour enemy AI
     [SerializeField] GameObject detectionRange;
     public float walkSpeed = 10f;
-    private bool playerDetected = false;
+    public bool playerDetected = false;
     [SerializeField] GameObject player;
 
     // Start is called before the first frame update

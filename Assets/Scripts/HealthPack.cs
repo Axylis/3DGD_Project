@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class HealthPack : MonoBehaviour
 {
+    [SerializeField] GameObject player;
     PlayerHealthSystem playerHealth;
-    public float healthRestore;
+    public float healthRestore = 50f;
 
-    void OnTriggerEnter(Collider collider)
+    private void OnTriggerEnter(Collider collider)
     {
-        playerHealth.Heal(50f);
+        if(collider.gameObject.tag == "Player")
+        {
+            player.GetComponent<PlayerHealthSystem>().Heal(healthRestore);
+            Destroy(gameObject);
+        }  
     }
 }
