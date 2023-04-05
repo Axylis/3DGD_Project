@@ -5,8 +5,10 @@ using UnityEngine;
 public class Gunshot : MonoBehaviour
 {
     private LineRenderer lr;
-    HealthSystem health;
+    PlayerHealthSystem playerHealth;
+    EnemyHealthSystem enemyHealth;
     private GameObject target;
+    [SerializeField] int dmg;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,6 +42,12 @@ public class Gunshot : MonoBehaviour
                 if(hitscan.collider.tag == "Enemy")
                 {
                     Debug.Log("Enemy shot");
+                    //references the enemy health system script of hit enemy
+                    enemyHealth = hitscan.transform.GetComponent<EnemyHealthSystem>();
+                    if(enemyHealth != null)
+                    {
+                        enemyHealth.Damage(25f);
+                    }
                 }
                 StartCoroutine(DisableLasers());
             }
