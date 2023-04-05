@@ -33,7 +33,11 @@ public class EnemyAI : MonoBehaviour
         {
             playerDetected = true;
         }
-        else
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        //triggers when player is detected
+        if(other.gameObject.tag == "Player")
         {
             playerDetected = false;
         }
