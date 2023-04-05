@@ -23,6 +23,7 @@ public class EnemyAI : MonoBehaviour
         if(playerDetected == true)
         {
             this.transform.LookAt(player.transform.position);
+            
         }
     }
 
