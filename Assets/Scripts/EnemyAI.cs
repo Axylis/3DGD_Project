@@ -10,6 +10,8 @@ public class EnemyAI : MonoBehaviour
     public bool playerDetected = false;
     [SerializeField] GameObject player;
 
+    private float step;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,11 +21,12 @@ public class EnemyAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //rotates towards players in area
+        step = walkSpeed * Time.deltaTime/10;
+        //rotates and moves towards players in area
         if(playerDetected == true)
         {
             this.transform.LookAt(player.transform.position);
-            
+            this.transform.position = Vector3.MoveTowards(this.transform.position, player.transform.position, step);
         }
     }
 
