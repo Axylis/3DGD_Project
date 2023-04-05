@@ -16,20 +16,45 @@ public class Gunshot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //click left mouse button to shoot
+        if(Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            bulletShot();
+        }
+    }
+
+    void bulletShot()
+    {
+        //enables laser and sets start position
+        lr.enabled = true;
         lr.SetPosition(0, this.transform.position);
 
         RaycastHit hitscan;
+        //detects hits from raycast
         if(Physics.Raycast(this.transform.position, this.transform.forward, out hitscan))
         {
             if(hitscan.collider)
             {
+                //sets end position on collision
                 lr.SetPosition(1, hitscan.point);
+                if(hitscan.collider.tag == "Enemy")
+                {
+                    Debug.Log("Enemy shot");
+                }
+                DisableLasers();
             }
         }
         else
         {
+            //sets end position 1000 units away from start
             lr.SetPosition(1, this.transform.forward*1000);
+            DisableLasers();
         }
-
+    }
+    IEnumerator DisableLasers()
+    {
+        //disable bullet trail after 0.2 seconds
+        yield return new WaitForSeconds(0.2f);
+        lr.enabled = false;
     }
 }
