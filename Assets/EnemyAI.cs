@@ -19,6 +19,7 @@ public class EnemyAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //rotates towards players in area
         if(playerDetected == true)
         {
             this.transform.LookAt(player.transform.position);
@@ -27,6 +28,7 @@ public class EnemyAI : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        //triggers when player is detected
         if(other.gameObject.tag == "Player")
         {
             playerDetected = true;
