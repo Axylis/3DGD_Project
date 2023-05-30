@@ -27,6 +27,11 @@ public class EnemyAI : MonoBehaviour
         {
             this.transform.LookAt(player.transform.position);
             this.transform.position = Vector3.MoveTowards(this.transform.position, player.transform.position, step);
+            this.GetComponent<Animator>().SetBool("stat_jalan", true);
+        }
+        else
+        {
+            this.GetComponent<Animator>().SetBool("stat_jalan", false);
         }
     }
 
