@@ -15,24 +15,23 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetKey(KeyCode.W))
         {
             this.transform.Translate(Vector3.forward * speed * Time.deltaTime, Space.World);
-            //this.GetComponent<Animator>().SetBool("stat_jalan", true);
+            this.GetComponent<Animator>().SetBool("stat_walk", true);
         }
         if(Input.GetKey(KeyCode.A))
         {
             this.transform.Translate(Vector3.left * speed * Time.deltaTime, Space.World);
-            //this.GetComponent<Animator>().SetBool("stat_jalan", true);
+            this.GetComponent<Animator>().SetBool("stat_walk", true);
         }
         if(Input.GetKey(KeyCode.S))
         {
             this.transform.Translate(Vector3.back * speed * Time.deltaTime, Space.World);
-            //this.GetComponent<Animator>().SetBool("stat_jalan", true);
+            this.GetComponent<Animator>().SetBool("stat_walk", true);
         }
         if(Input.GetKey(KeyCode.D))
         {
             this.transform.Translate(Vector3.right * speed * Time.deltaTime, Space.World);
-           // this.GetComponent<Animator>().SetBool("stat_jalan", true);
+            this.GetComponent<Animator>().SetBool("stat_walk", true);
         }
-        
         Debug.Log("Pos: " + this.transform.position);
     }
 
