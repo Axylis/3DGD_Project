@@ -219,7 +219,7 @@ GameObject:
   - component: {fileID: 46265886}
   - component: {fileID: 46265885}
   - component: {fileID: 46265889}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: lapangan (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -329,7 +329,7 @@ GameObject:
   - component: {fileID: 48060788}
   - component: {fileID: 48060787}
   - component: {fileID: 48060786}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: longlong (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -584,7 +584,7 @@ GameObject:
   - component: {fileID: 89858266}
   - component: {fileID: 89858265}
   - component: {fileID: 89858264}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: longlong (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -762,7 +762,7 @@ GameObject:
   - component: {fileID: 121983205}
   - component: {fileID: 121983204}
   - component: {fileID: 121983203}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: longlong (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -962,7 +962,7 @@ GameObject:
   - component: {fileID: 138573029}
   - component: {fileID: 138573028}
   - component: {fileID: 138573027}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: longlong (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1253,7 +1253,7 @@ GameObject:
   - component: {fileID: 201947249}
   - component: {fileID: 201947248}
   - component: {fileID: 201947247}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: stonefloor1 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1350,7 +1350,7 @@ GameObject:
   - component: {fileID: 211521795}
   - component: {fileID: 211521794}
   - component: {fileID: 211521793}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: stonefloor1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1447,7 +1447,7 @@ GameObject:
   - component: {fileID: 233018483}
   - component: {fileID: 233018482}
   - component: {fileID: 233018481}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: stonefloor1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1724,7 +1724,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clearButton: {fileID: 728900729}
   clear_text: {fileID: 525682523}
-  player: {fileID: 0}
+  player: {fileID: 1853053387}
   enemyCounter: {fileID: 1130813219}
 --- !u!114 &332157948
 MonoBehaviour:
@@ -1825,7 +1825,7 @@ GameObject:
   - component: {fileID: 335280659}
   - component: {fileID: 335280658}
   - component: {fileID: 335280662}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: lapangan (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1936,7 +1936,7 @@ GameObject:
   - component: {fileID: 378186084}
   - component: {fileID: 378186083}
   - component: {fileID: 378186087}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: lapangan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2324,7 +2324,7 @@ GameObject:
   - component: {fileID: 470480899}
   - component: {fileID: 470480898}
   - component: {fileID: 470480897}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: stonefloor1 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2556,7 +2556,7 @@ GameObject:
   - component: {fileID: 552641960}
   - component: {fileID: 552641959}
   - component: {fileID: 552641958}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: longlong (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3066,7 +3066,7 @@ GameObject:
   - component: {fileID: 656741817}
   - component: {fileID: 656741816}
   - component: {fileID: 656741815}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: longlong (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3789,7 +3789,7 @@ GameObject:
   - component: {fileID: 837590566}
   - component: {fileID: 837590565}
   - component: {fileID: 837590564}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: longlong (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4183,7 +4183,7 @@ GameObject:
   - component: {fileID: 910291891}
   - component: {fileID: 910291890}
   - component: {fileID: 910291889}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: longlong (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4280,7 +4280,7 @@ GameObject:
   - component: {fileID: 952950245}
   - component: {fileID: 952950244}
   - component: {fileID: 952950243}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: longlong
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4537,7 +4537,7 @@ GameObject:
   - component: {fileID: 993856786}
   - component: {fileID: 993856785}
   - component: {fileID: 993856784}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: stonefloor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5542,7 +5542,7 @@ GameObject:
   - component: {fileID: 1206201248}
   - component: {fileID: 1206201247}
   - component: {fileID: 1206201246}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: stonefloor1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5930,7 +5930,7 @@ GameObject:
   - component: {fileID: 1310293436}
   - component: {fileID: 1310293435}
   - component: {fileID: 1310293434}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: stonefloor (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6745,7 +6745,7 @@ GameObject:
   - component: {fileID: 1595779946}
   - component: {fileID: 1595779945}
   - component: {fileID: 1595779944}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: stonefloor1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7037,7 +7037,7 @@ GameObject:
   - component: {fileID: 1682773035}
   - component: {fileID: 1682773034}
   - component: {fileID: 1682773033}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: longlong (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7950,7 +7950,7 @@ GameObject:
   - component: {fileID: 1942173783}
   - component: {fileID: 1942173782}
   - component: {fileID: 1942173781}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8047,7 +8047,7 @@ GameObject:
   - component: {fileID: 1966613018}
   - component: {fileID: 1966613017}
   - component: {fileID: 1966613016}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: longlong (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8241,7 +8241,7 @@ GameObject:
   - component: {fileID: 2044259518}
   - component: {fileID: 2044259517}
   - component: {fileID: 2044259516}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: longlong (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8615,7 +8615,7 @@ GameObject:
   - component: {fileID: 2143089435}
   - component: {fileID: 2143089434}
   - component: {fileID: 2143089433}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: longlong (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
