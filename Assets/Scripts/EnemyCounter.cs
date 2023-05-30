@@ -11,12 +11,14 @@ public class EnemyCounter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //finds game object with enemy tag
         enemy = GameObject.FindGameObjectsWithTag("Enemy");
     }
 
     // Update is called once per frame
     void Update()
     {
+        //displays number of enemies in text
         enemyCounter.text = "Enemy Left: " + enemy.Length;
     }
 }
