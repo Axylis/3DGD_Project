@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/LEVEL MAP 1 UTS SHOOTER.unity
+    path: Assets/Scenes/Main Menu.unity
+    guid: 2539a3f15f962924cafb004b02aff4f9
+  - enabled: 1
+    path: Assets/Scenes/LEVEL MAP 1 UTS SHOOTER.unity
     guid: ba536d16cc41517448596266c83b72d0
+  - enabled: 1
+    path: Assets/2ndLevelFolder/MAP.unity
+    guid: 15b8de08c76b4734fbf89a51b4b7a1b1
   m_configObjects: {}
