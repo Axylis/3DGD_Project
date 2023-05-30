@@ -32,6 +32,22 @@ public class PlayerMovement : MonoBehaviour
             this.transform.Translate(Vector3.right * speed * Time.deltaTime, Space.World);
             this.GetComponent<Animator>().SetBool("stat_walk", true);
         }
+        if(Input.GetKeyUp(KeyCode.W))
+        {
+            this.GetComponent<Animator>().SetBool("stat_walk", false);
+        }
+        if(Input.GetKeyUp(KeyCode.A))
+        {
+            this.GetComponent<Animator>().SetBool("stat_walk", false);
+        }
+        if(Input.GetKeyUp(KeyCode.S))
+        {
+            this.GetComponent<Animator>().SetBool("stat_walk", false);
+        }
+        if(Input.GetKeyUp(KeyCode.D))
+        {
+            this.GetComponent<Animator>().SetBool("stat_walk", false);
+        }
         Debug.Log("Pos: " + this.transform.position);
     }
 
