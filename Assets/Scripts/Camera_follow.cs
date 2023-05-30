@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Camera_follow : MonoBehaviour
 {
-    public int cameraZoom = 15;
+    public int cameraZoom = 30;
     Vector3 camPosition;
     public GameObject player;
     // Start is called before the first frame update

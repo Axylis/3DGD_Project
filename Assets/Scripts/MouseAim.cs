@@ -8,6 +8,7 @@ public class MouseAim : MonoBehaviour
     private Camera cam;
     Vector3 aimLocation;
     // Start is called before the first frame update
+    Vector3 yAxisRepositioning;
     void Start()
     {
         cam = Camera.main;
@@ -26,7 +27,7 @@ public class MouseAim : MonoBehaviour
             if (success)
             {
                 // Calculate the direction
-                var direction = position - transform.position;
+                var direction = (position - transform.position);
 
                 // You might want to delete this line.
                 // Ignore the height difference.
@@ -39,7 +40,7 @@ public class MouseAim : MonoBehaviour
 
     private (bool success, Vector3 position) GetMousePosition()
     {
-        aimLocation = new Vector3(Input.mousePosition.x, Input.mousePosition.y + 0.35f, Input.mousePosition.z);
+        aimLocation = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Input.mousePosition.z);
         var ray = cam.ScreenPointToRay(aimLocation);
 
             if (Physics.Raycast(ray, out var hitInfo, Mathf.Infinity, ground))

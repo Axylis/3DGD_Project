@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/LEVEL MAP 1 UTS SHOOTER.unity
+    guid: ba536d16cc41517448596266c83b72d0
   m_configObjects: {}
