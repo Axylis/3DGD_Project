@@ -9,20 +9,43 @@ public class Gunshot : MonoBehaviour
     EnemyHealthSystem enemyHealth;
     private GameObject target;
     [SerializeField] int dmg;
+    GunInventory gunInventory;
+
     // Start is called before the first frame update
     void Start()
     {
         lr = this.GetComponent<LineRenderer>();
+        DontDestroyOnLoad(gunInventory);
     }
 
     // Update is called once per frame
     void Update()
     {
-        //click left mouse button to shoot
-        if(Input.GetKeyDown(KeyCode.Mouse0))
+        if(gunInventory.guns[0].activeSelf)
         {
-            bulletShot();
+            //click left mouse button to shoot
+            if(Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                bulletShot();
+            }
         }
+        if(gunInventory.guns[1].activeSelf)
+        {
+            //click left mouse button to shoot
+            if(Input.GetKey(KeyCode.Mouse0))
+            {
+                bulletShot();
+            }
+        }
+        if(gunInventory.guns[2].activeSelf)
+        {
+            //click left mouse button to shoot
+            if(Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                bulletShot();
+            }
+        }
+        
     }
 
     void bulletShot()
@@ -65,4 +88,5 @@ public class Gunshot : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
         lr.enabled = false;
     }
+    
 }

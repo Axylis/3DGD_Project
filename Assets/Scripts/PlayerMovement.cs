@@ -16,22 +16,22 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetKey(KeyCode.W))
         {
             this.transform.Translate(Vector3.forward * speed * Time.deltaTime, Space.World);
-            //animator.SetBool("stat_walk", true);
+            animator.SetBool("stat_walk", true);
         }
         if(Input.GetKey(KeyCode.A))
         {
             this.transform.Translate(Vector3.left * speed * Time.deltaTime, Space.World);
-            //animator.SetBool("stat_walk", true);
+            animator.SetBool("stat_walk", true);
         }
         if(Input.GetKey(KeyCode.S))
         {
             this.transform.Translate(Vector3.back * speed * Time.deltaTime, Space.World);
-            //animator.SetBool("stat_walk", true);
+            animator.SetBool("stat_walk", true);
         }
         if(Input.GetKey(KeyCode.D))
         {
             this.transform.Translate(Vector3.right * speed * Time.deltaTime, Space.World);
-           // animator.SetBool("stat_walk", true);
+            animator.SetBool("stat_walk", true);
         }
         if(Input.GetKeyUp(KeyCode.W))
         {
