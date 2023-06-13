@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {    
-    public float speed = 5f;
+    public float speed = 7f;
     public Animator animator;
+
+    public GameObject player;
 
     void Start()
     {
-        
+        DontDestroyOnLoad(player);
     }
-    void Update() {  
+    void FixedUpdate() {  
         //basic wasd movements
         if(Input.GetKey(KeyCode.W))
         {
