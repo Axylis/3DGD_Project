@@ -9,7 +9,7 @@ public class Gunshot : MonoBehaviour
     EnemyHealthSystem enemyHealth;
     private GameObject target;
     [SerializeField] int dmg;
-    GunInventory gunInventory;
+    public GunInventory gunInventory;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +21,7 @@ public class Gunshot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(gunInventory.guns[0].activeSelf)
+        if(gunInventory.guns[0].activeInHierarchy == true)
         {
             //click left mouse button to shoot
             if(Input.GetKeyDown(KeyCode.Mouse0))
@@ -29,7 +29,7 @@ public class Gunshot : MonoBehaviour
                 bulletShot();
             }
         }
-        if(gunInventory.guns[1].activeSelf)
+        if(gunInventory.guns[1].activeInHierarchy == true)
         {
             //click left mouse button to shoot
             if(Input.GetKey(KeyCode.Mouse0))
@@ -37,7 +37,7 @@ public class Gunshot : MonoBehaviour
                 bulletShot();
             }
         }
-        if(gunInventory.guns[2].activeSelf)
+        if(gunInventory.guns[2].activeInHierarchy == true)
         {
             //click left mouse button to shoot
             if(Input.GetKeyDown(KeyCode.Mouse0))
