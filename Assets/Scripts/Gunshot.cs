@@ -11,6 +11,8 @@ public class Gunshot : MonoBehaviour
     [SerializeField] int dmg;
     public GunInventory gunInventory;
     bool canShoot;
+    public AmmoSystem[] ammo;
+
 
     // Start is called before the first frame update
     void Start()
@@ -26,18 +28,20 @@ public class Gunshot : MonoBehaviour
         if(gunInventory.guns[0].activeInHierarchy == true)
         {
             //click left mouse button to shoot
-            if(Input.GetKeyDown(KeyCode.Mouse0))
+            if(Input.GetKeyDown(KeyCode.Mouse0) && ammo[0].currentAmmo > 0)
             {
                 bulletShot();
+                ammo[0].currentAmmo--;
             }
         }
         
-        if(gunInventory.guns[2].activeInHierarchy == true && canShoot)
+        if(gunInventory.guns[2].activeInHierarchy == true && canShoot && ammo[2].currentAmmo > 0)
         {
             //click left mouse button to shoot
             if(Input.GetKeyDown(KeyCode.Mouse0))
             {
                 StartCoroutine(SR_ROFLimiter());
+                ammo[2].currentAmmo--;
             }
         }
         
@@ -45,12 +49,13 @@ public class Gunshot : MonoBehaviour
 
     void FixedUpdate()
     {
-        if(gunInventory.guns[1].activeInHierarchy == true && canShoot)
+        if(gunInventory.guns[1].activeInHierarchy == true && canShoot && ammo[1].currentAmmo > 0)
         {
             //click left mouse button to shoot
             if(Input.GetKey(KeyCode.Mouse0))
             {
                 StartCoroutine(ROFLimiter());
+                ammo[1].currentAmmo--;
             }
         }
     }

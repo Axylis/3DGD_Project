@@ -7,15 +7,17 @@ public class GunInventory : MonoBehaviour
     public GameObject[] guns;
     public bool weapon2Acquired = false;
     public bool weapon3Acquired = false;
+
     // Start is called before the first frame update
     void Start()
     {
         //gun 0 is semi auto rifle, gun 2 is full auto rifle, and gun 3 is sniper
-
         DontDestroyOnLoad(guns[0]);
         DontDestroyOnLoad(guns[1]);
         DontDestroyOnLoad(guns[2]);
+        
     }
+
 
     // Update is called once per frame
     void Update()
