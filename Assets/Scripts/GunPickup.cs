@@ -12,9 +12,9 @@ public class GunPickup : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+        this.gameObject.transform.Rotate(0f,1f,0f, Space.World);
     }
 
     private void OnTriggerEnter(Collider other)

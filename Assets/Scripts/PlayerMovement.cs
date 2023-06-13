@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
     {
         
     }
-    void Update() {
+    void Update() {  
         //basic wasd movements
         if(Input.GetKey(KeyCode.W))
         {

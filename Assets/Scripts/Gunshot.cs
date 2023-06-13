@@ -10,12 +10,14 @@ public class Gunshot : MonoBehaviour
     private GameObject target;
     [SerializeField] int dmg;
     public GunInventory gunInventory;
+    bool canShoot;
 
     // Start is called before the first frame update
     void Start()
     {
         lr = this.GetComponent<LineRenderer>();
         DontDestroyOnLoad(gunInventory);
+        canShoot = true;
     }
 
     // Update is called once per frame
@@ -29,23 +31,28 @@ public class Gunshot : MonoBehaviour
                 bulletShot();
             }
         }
-        if(gunInventory.guns[1].activeInHierarchy == true)
-        {
-            //click left mouse button to shoot
-            if(Input.GetKey(KeyCode.Mouse0))
-            {
-                bulletShot();
-            }
-        }
-        if(gunInventory.guns[2].activeInHierarchy == true)
+        
+        if(gunInventory.guns[2].activeInHierarchy == true && canShoot)
         {
             //click left mouse button to shoot
             if(Input.GetKeyDown(KeyCode.Mouse0))
             {
-                bulletShot();
+                StartCoroutine(SR_ROFLimiter());
             }
         }
         
+    }
+
+    void FixedUpdate()
+    {
+        if(gunInventory.guns[1].activeInHierarchy == true && canShoot)
+        {
+            //click left mouse button to shoot
+            if(Input.GetKey(KeyCode.Mouse0))
+            {
+                StartCoroutine(ROFLimiter());
+            }
+        }
     }
 
     void bulletShot()
@@ -67,9 +74,17 @@ public class Gunshot : MonoBehaviour
                     Debug.Log("Enemy shot");
                     //references the enemy health system script of hit enemy
                     enemyHealth = hitscan.transform.GetComponent<EnemyHealthSystem>();
-                    if(enemyHealth != null)
+                    if(enemyHealth != null && gunInventory.guns[0].activeInHierarchy == true)
                     {
                         enemyHealth.Damage(25f);
+                    }
+                    else if(enemyHealth != null && gunInventory.guns[1].activeInHierarchy == true)
+                    {
+                        enemyHealth.Damage(10f);
+                    }
+                    else if(enemyHealth != null && gunInventory.guns[2].activeInHierarchy == true)
+                    {
+                        enemyHealth.Damage(100f);
                     }
                 }
                 StartCoroutine(DisableLasers());
@@ -87,6 +102,21 @@ public class Gunshot : MonoBehaviour
         //disable bullet trail after 0.2 seconds
         yield return new WaitForSeconds(0.2f);
         lr.enabled = false;
+    }
+
+    IEnumerator ROFLimiter()
+    {
+        canShoot = false;
+        bulletShot();
+        yield return new WaitForSecondsRealtime(0.06f);
+        canShoot = true;
+    }
+    IEnumerator SR_ROFLimiter()
+    {
+        canShoot = false;
+        bulletShot();
+        yield return new WaitForSecondsRealtime(1f);
+        canShoot = true;
     }
     
 }
