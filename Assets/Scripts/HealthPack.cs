@@ -16,4 +16,9 @@ public class HealthPack : MonoBehaviour
             Destroy(gameObject);
         }  
     }
+
+    void FixedUpdate()
+    {
+        this.gameObject.transform.Rotate(0f,1f,0f, Space.World);
+    }
 }

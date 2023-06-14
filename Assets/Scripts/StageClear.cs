@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class StageClear : MonoBehaviour
 {
-    public GameObject clearButton, clear_text, player;
+    public GameObject clearButton, clear_text, player, cover;
     public EnemyCounter enemyCounter;
 
     // Start is called before the first frame update
@@ -26,7 +26,7 @@ public class StageClear : MonoBehaviour
     {
         if(enemyCounter.stageClear == true)
         {
-            player.transform.position = new Vector3(-7.051185f, 2.172067f, 8.06f);
+            cover.SetActive(true);
             clearButton.SetActive(true);
             clear_text.SetActive(true);
         }
