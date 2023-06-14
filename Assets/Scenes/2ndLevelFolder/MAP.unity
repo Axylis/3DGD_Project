@@ -468,14 +468,18 @@ PrefabInstance:
     - target: {fileID: 5693562837435072765, guid: dfd12a47eb028c342bc055d3eeeca5a2, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2016619529}
+    - target: {fileID: 5693562837435072765, guid: dfd12a47eb028c342bc055d3eeeca5a2, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1251881519}
     - target: {fileID: 5693562837435072766, guid: dfd12a47eb028c342bc055d3eeeca5a2, type: 3}
       propertyPath: m_Name
       value: HumanoidEnemy (3)
       objectReference: {fileID: 0}
     - target: {fileID: 5693562837435072766, guid: dfd12a47eb028c342bc055d3eeeca5a2, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfd12a47eb028c342bc055d3eeeca5a2, type: 3}
@@ -1470,6 +1474,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 412656842}
     - target: {fileID: 1541578381, guid: 8aa59af5d7e31f94284c5c570d8b882e, type: 3}
+      propertyPath: ammoCount
+      value: 
+      objectReference: {fileID: 1780095909}
+    - target: {fileID: 1541578381, guid: 8aa59af5d7e31f94284c5c570d8b882e, type: 3}
       propertyPath: gunInventory
       value: 
       objectReference: {fileID: 412656845}
@@ -1771,7 +1779,11 @@ PrefabInstance:
     - target: {fileID: 5693562837435072765, guid: dfd12a47eb028c342bc055d3eeeca5a2, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 4092908223879293294, guid: af487b5f351e52f4fb1d5d09315cca05, type: 3}
+      objectReference: {fileID: 2016619529}
+    - target: {fileID: 5693562837435072765, guid: dfd12a47eb028c342bc055d3eeeca5a2, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 924139228}
     - target: {fileID: 5693562837435072766, guid: dfd12a47eb028c342bc055d3eeeca5a2, type: 3}
       propertyPath: m_Name
       value: HumanoidEnemy (1)
@@ -2102,6 +2114,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 180, y: 0, z: 20}
+--- !u!95 &393373840 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5693562837237551142, guid: dfd12a47eb028c342bc055d3eeeca5a2, type: 3}
+  m_PrefabInstance: {fileID: 1017231204}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &412656842 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4092908224813191710, guid: af487b5f351e52f4fb1d5d09315cca05, type: 3}
@@ -2695,7 +2712,7 @@ GameObject:
   - component: {fileID: 590930617}
   m_Layer: 0
   m_Name: Main Camera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2712,7 +2729,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d8a6c16e9a7c5e44825acfe0d87e366, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraZoom: 30
+  cameraZoom: 10
   player: {fileID: 2016619529}
 --- !u!81 &590930618
 AudioListener:
@@ -2772,14 +2789,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 590930616}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -1.0627962, y: 2.6884584, z: 1.7044917}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1001 &595185224
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2834,14 +2851,18 @@ PrefabInstance:
     - target: {fileID: 5693562837435072765, guid: dfd12a47eb028c342bc055d3eeeca5a2, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2016619529}
+    - target: {fileID: 5693562837435072765, guid: dfd12a47eb028c342bc055d3eeeca5a2, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1254817658}
     - target: {fileID: 5693562837435072766, guid: dfd12a47eb028c342bc055d3eeeca5a2, type: 3}
       propertyPath: m_Name
       value: HumanoidEnemy (2)
       objectReference: {fileID: 0}
     - target: {fileID: 5693562837435072766, guid: dfd12a47eb028c342bc055d3eeeca5a2, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfd12a47eb028c342bc055d3eeeca5a2, type: 3}
@@ -3482,14 +3503,18 @@ PrefabInstance:
     - target: {fileID: 5693562837435072765, guid: dfd12a47eb028c342bc055d3eeeca5a2, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2016619529}
+    - target: {fileID: 5693562837435072765, guid: dfd12a47eb028c342bc055d3eeeca5a2, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1682697755}
     - target: {fileID: 5693562837435072766, guid: dfd12a47eb028c342bc055d3eeeca5a2, type: 3}
       propertyPath: m_Name
       value: HumanoidEnemy (4)
       objectReference: {fileID: 0}
     - target: {fileID: 5693562837435072766, guid: dfd12a47eb028c342bc055d3eeeca5a2, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfd12a47eb028c342bc055d3eeeca5a2, type: 3}
@@ -4065,6 +4090,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 506504eb0a0ba7c4a9f7255a3465a09a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &924139228 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5693562837237551142, guid: dfd12a47eb028c342bc055d3eeeca5a2, type: 3}
+  m_PrefabInstance: {fileID: 307386324}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &925740472 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 404270424512305417, guid: 814de3d7785c60041bb78050422a63ae, type: 3}
@@ -4087,6 +4117,7 @@ MonoBehaviour:
   magLimit: 30
   gunInventory: {fileID: 412656845}
   gunshot: {fileID: 412656842}
+  ammoCount: {fileID: 1780095909}
 --- !u!1 &952950241
 GameObject:
   m_ObjectHideFlags: 0
@@ -4401,14 +4432,18 @@ PrefabInstance:
     - target: {fileID: 5693562837435072765, guid: dfd12a47eb028c342bc055d3eeeca5a2, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2016619529}
+    - target: {fileID: 5693562837435072765, guid: dfd12a47eb028c342bc055d3eeeca5a2, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 393373840}
     - target: {fileID: 5693562837435072766, guid: dfd12a47eb028c342bc055d3eeeca5a2, type: 3}
       propertyPath: m_Name
       value: HumanoidEnemy (5)
       objectReference: {fileID: 0}
     - target: {fileID: 5693562837435072766, guid: dfd12a47eb028c342bc055d3eeeca5a2, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfd12a47eb028c342bc055d3eeeca5a2, type: 3}
@@ -4934,14 +4969,18 @@ PrefabInstance:
     - target: {fileID: 5693562837435072765, guid: dfd12a47eb028c342bc055d3eeeca5a2, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2016619529}
+    - target: {fileID: 5693562837435072765, guid: dfd12a47eb028c342bc055d3eeeca5a2, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1293106605}
     - target: {fileID: 5693562837435072766, guid: dfd12a47eb028c342bc055d3eeeca5a2, type: 3}
       propertyPath: m_Name
       value: HumanoidEnemy (7)
       objectReference: {fileID: 0}
     - target: {fileID: 5693562837435072766, guid: dfd12a47eb028c342bc055d3eeeca5a2, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfd12a47eb028c342bc055d3eeeca5a2, type: 3}
@@ -5431,6 +5470,16 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1206201244}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &1251881519 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5693562837237551142, guid: dfd12a47eb028c342bc055d3eeeca5a2, type: 3}
+  m_PrefabInstance: {fileID: 53616088}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1254817658 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5693562837237551142, guid: dfd12a47eb028c342bc055d3eeeca5a2, type: 3}
+  m_PrefabInstance: {fileID: 595185224}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1273006264
 GameObject:
   m_ObjectHideFlags: 0
@@ -5528,6 +5577,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1273006264}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &1293106605 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5693562837237551142, guid: dfd12a47eb028c342bc055d3eeeca5a2, type: 3}
+  m_PrefabInstance: {fileID: 1173182068}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1302353445
 GameObject:
   m_ObjectHideFlags: 0
@@ -6120,6 +6174,10 @@ PrefabInstance:
       propertyPath: gunshot
       value: 
       objectReference: {fileID: 412656842}
+    - target: {fileID: 434808650, guid: 9d819afd939983740b38ba6d19177a13, type: 3}
+      propertyPath: ammoCount
+      value: 
+      objectReference: {fileID: 1780095909}
     - target: {fileID: 434808650, guid: 9d819afd939983740b38ba6d19177a13, type: 3}
       propertyPath: gunInventory
       value: 
@@ -7125,6 +7183,11 @@ RectTransform:
   m_AnchoredPosition: {x: -570, y: 168}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.50000006, y: 0.5}
+--- !u!95 &1682697755 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5693562837237551142, guid: dfd12a47eb028c342bc055d3eeeca5a2, type: 3}
+  m_PrefabInstance: {fileID: 751022274}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1682773031
 GameObject:
   m_ObjectHideFlags: 0
@@ -7508,14 +7571,18 @@ PrefabInstance:
     - target: {fileID: 5693562837435072765, guid: dfd12a47eb028c342bc055d3eeeca5a2, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2016619529}
+    - target: {fileID: 5693562837435072765, guid: dfd12a47eb028c342bc055d3eeeca5a2, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 2132382320}
     - target: {fileID: 5693562837435072766, guid: dfd12a47eb028c342bc055d3eeeca5a2, type: 3}
       propertyPath: m_Name
       value: HumanoidEnemy (6)
       objectReference: {fileID: 0}
     - target: {fileID: 5693562837435072766, guid: dfd12a47eb028c342bc055d3eeeca5a2, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfd12a47eb028c342bc055d3eeeca5a2, type: 3}
@@ -8649,6 +8716,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4092908223879293286, guid: af487b5f351e52f4fb1d5d09315cca05, type: 3}
+      propertyPath: HPcounter
+      value: 
+      objectReference: {fileID: 1097531118}
+    - target: {fileID: 4092908223879293286, guid: af487b5f351e52f4fb1d5d09315cca05, type: 3}
+      propertyPath: currentHP
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 4092908223879293294, guid: af487b5f351e52f4fb1d5d09315cca05, type: 3}
       propertyPath: m_Name
       value: Player 1 Variant
@@ -9128,6 +9203,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2130164172}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &2132382320 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5693562837237551142, guid: dfd12a47eb028c342bc055d3eeeca5a2, type: 3}
+  m_PrefabInstance: {fileID: 1789483102}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2143089431
 GameObject:
   m_ObjectHideFlags: 0
