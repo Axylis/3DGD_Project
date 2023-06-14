@@ -9,11 +9,18 @@ public class PlayerMovement : MonoBehaviour
 
     public GameObject player;
 
+    void Awake()
+    {
+        DontDestroyOnLoad(player);
+        player.SetActive(true);
+    }
     void Start()
     {
         DontDestroyOnLoad(player);
+        player.SetActive(true);
+        Time.timeScale = 1;
     }
-    void FixedUpdate() {  
+    void Update() {  
         //basic wasd movements
         if(Input.GetKey(KeyCode.W))
         {

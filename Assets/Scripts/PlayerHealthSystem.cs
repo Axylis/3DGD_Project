@@ -5,20 +5,21 @@ using UnityEngine.UI;
 
 public class PlayerHealthSystem : MonoBehaviour
 {
-    [SerializeField] Text HPIndicator;
+    Text HPIndicator;
     public float maxHP = 100;
-    float currentHP;
+    public float currentHP;
     float damage;
+
     // Start is called before the first frame update
     void Start()
     {
+        HPIndicator = GameObject.FindWithTag("HPIndicator").GetComponent<Text>();
         currentHP = maxHP;
     }
 
     // Update is called once per frame
     void Update()
     {
-        HPIndicator.text = "Player HP: " + currentHP;
         DeathCheck();
     }
 

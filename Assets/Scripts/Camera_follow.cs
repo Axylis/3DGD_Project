@@ -10,6 +10,7 @@ public class Camera_follow : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        DontDestroyOnLoad(this);
         //on game start, sets cam position to player
         camPosition = new Vector3(player.transform.position.x, player.transform.position.y + cameraZoom, player.transform.position.z);
         this.transform.position = camPosition;

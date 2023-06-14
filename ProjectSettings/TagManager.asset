@@ -9,6 +9,8 @@ TagManager:
   - EnemyDetectionRange
   - FullAutoRifle
   - SniperRifle
+  - HPIndicator
+  - AmmoCounter
   layers:
   - Default
   - TransparentFX

@@ -128,6 +128,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4092908223879293294, guid: af487b5f351e52f4fb1d5d09315cca05, type: 3}
   m_PrefabInstance: {fileID: 1870962128}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &46625728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 46625719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fb5727fb3fd71541b4b17cb4946977a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 46625719}
 --- !u!1 &101539948
 GameObject:
   m_ObjectHideFlags: 0
@@ -2102,7 +2115,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5693562837435072766, guid: dfd12a47eb028c342bc055d3eeeca5a2, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfd12a47eb028c342bc055d3eeeca5a2, type: 3}
@@ -2229,6 +2242,14 @@ PrefabInstance:
     - target: {fileID: 4092908223879293280, guid: af487b5f351e52f4fb1d5d09315cca05, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4092908223879293286, guid: af487b5f351e52f4fb1d5d09315cca05, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 101539951}
+    - target: {fileID: 4092908223879293286, guid: af487b5f351e52f4fb1d5d09315cca05, type: 3}
+      propertyPath: currentHP
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4092908223879293286, guid: af487b5f351e52f4fb1d5d09315cca05, type: 3}
       propertyPath: HPIndicator
@@ -2446,6 +2467,7 @@ GameObject:
   - component: {fileID: 2117368674}
   - component: {fileID: 2117368676}
   - component: {fileID: 2117368675}
+  - component: {fileID: 2117368677}
   m_Layer: 5
   m_Name: HPIndicator
   m_TagString: Untagged
@@ -2515,6 +2537,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2117368673}
   m_CullTransparentMesh: 1
+--- !u!114 &2117368677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2117368673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a36ebd979358c49979571efa65e5f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HpIndicator: {fileID: 2117368675}
+  player: {fileID: 46625719}
 --- !u!1001 &2135006671
 PrefabInstance:
   m_ObjectHideFlags: 0

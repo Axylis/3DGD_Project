@@ -11,12 +11,14 @@ public class StageClear : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Time.timeScale = 1f;
     }
 
     public void Continue()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        player.SetActive(true);
+        Time.timeScale = 1f;
     }
 
     // Update is called once per frame
@@ -24,8 +26,7 @@ public class StageClear : MonoBehaviour
     {
         if(enemyCounter.stageClear == true)
         {
-            player.SetActive(false);
-            Time.timeScale = 0f;
+            player.transform.position = new Vector3(-7.051185f, 2.172067f, 8.06f);
             clearButton.SetActive(true);
             clear_text.SetActive(true);
         }
