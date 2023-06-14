@@ -30,5 +30,6 @@ public class StageClear : MonoBehaviour
             clearButton.SetActive(true);
             clear_text.SetActive(true);
         }
+        
     }
 }

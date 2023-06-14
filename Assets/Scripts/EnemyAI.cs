@@ -6,11 +6,15 @@ public class EnemyAI : MonoBehaviour
 {
     //general behaviour enemy AI
     [SerializeField] GameObject detectionRange;
-    public float walkSpeed = 10f;
+    public float walkSpeed = 7f;
     public bool playerDetected = false;
     [SerializeField] GameObject player;
 
     public Animator animator;
+
+    public AudioSource audioSource;
+
+    bool audioPlaying = false;
 
     private float step;
 
@@ -29,10 +33,17 @@ public class EnemyAI : MonoBehaviour
         {
             this.transform.LookAt(player.transform.position);
             this.transform.position = Vector3.MoveTowards(this.transform.position, player.transform.position, step);
+            if(audioPlaying != true)
+            {
+                audioSource.Play();
+                audioPlaying = true;
+            }
             animator.SetBool("stat_jalan", true);
         }
         else
         {
+            audioSource.Stop();
+            audioPlaying = false;
             animator.SetBool("stat_jalan", false);
         }
     }

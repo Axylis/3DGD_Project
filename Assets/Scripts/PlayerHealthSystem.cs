@@ -33,7 +33,7 @@ public class PlayerHealthSystem : MonoBehaviour
         //checks if hp is 0 or below
         if(currentHP <= 0f)
         {
-            Destroy(gameObject);
+            this.gameObject.SetActive(false);
         }
     }
 
