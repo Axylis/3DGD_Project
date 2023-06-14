@@ -3650,6 +3650,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 925740473, guid: 633a0761c593ac6448de9f19578cd4c4, type: 3}
+      propertyPath: ammoCount
+      value: 
+      objectReference: {fileID: 710876902}
+    - target: {fileID: 2191741913012116214, guid: 633a0761c593ac6448de9f19578cd4c4, type: 3}
+      propertyPath: ammoCount
+      value: 
+      objectReference: {fileID: 710876902}
+    - target: {fileID: 2191741913020097209, guid: 633a0761c593ac6448de9f19578cd4c4, type: 3}
+      propertyPath: ammoCount
+      value: 
+      objectReference: {fileID: 710876902}
     - target: {fileID: 2785001313303116272, guid: 633a0761c593ac6448de9f19578cd4c4, type: 3}
       propertyPath: m_Name
       value: Player 1 Updated
@@ -4025,7 +4037,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HpIndicator: {fileID: 2117368675}
-  player: {fileID: 0}
+  player: {fileID: 1532133368}
 --- !u!1001 &2135006671
 PrefabInstance:
   m_ObjectHideFlags: 0

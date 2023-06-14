@@ -39,9 +39,13 @@ public class PlayerHealthSystem : MonoBehaviour
 
     public void Heal(float healAmount)
     {
-        if((currentHP += healAmount) <= maxHP)
+        if((currentHP += healAmount) < maxHP)
         {
             currentHP += healAmount;
+            if(currentHP > 100)
+            {
+                currentHP = 100;
+            }
         }
         else
         {

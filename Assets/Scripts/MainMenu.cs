@@ -9,6 +9,7 @@ public class MainMenu : MonoBehaviour
 {
     public Button startGame, controls, backButton;
     public TMP_Text gameControls;
+    public AudioSource audioClick;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,11 +20,13 @@ public class MainMenu : MonoBehaviour
 
     void changeScene()
     {
+        audioClick.Play();
         SceneManager.LoadScene(1);
     }
 
     void helpMenu()
     {
+        audioClick.Play();
         startGame.gameObject.SetActive(false);
         controls.gameObject.SetActive(false);
         gameControls.gameObject.SetActive(true);
@@ -31,6 +34,7 @@ public class MainMenu : MonoBehaviour
     }
     void returnToMain()
     {
+        audioClick.Play();
         startGame.gameObject.SetActive(true);
         controls.gameObject.SetActive(true);
         gameControls.gameObject.SetActive(false);

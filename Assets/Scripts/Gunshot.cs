@@ -91,7 +91,7 @@ public class Gunshot : MonoBehaviour
                     else if(enemyHealth != null && gunInventory.guns[1].activeInHierarchy == true)
                     {
                         
-                        enemyHealth.Damage(10f);
+                        enemyHealth.Damage(15f);
                     }
                     else if(enemyHealth != null && gunInventory.guns[2].activeInHierarchy == true)
                     {
@@ -121,7 +121,7 @@ public class Gunshot : MonoBehaviour
         canShoot = false;
         bulletShot();
         audioSource2.Play();
-        yield return new WaitForSecondsRealtime(0.06f);
+        yield return new WaitForSecondsRealtime(0.2f);
         canShoot = true;
     }
     IEnumerator SR_ROFLimiter()

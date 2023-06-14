@@ -628,14 +628,14 @@ PrefabInstance:
     - target: {fileID: 1142653060, guid: 27a06c932c1200c49961df3bceef27ab, type: 3}
       propertyPath: gunInventory
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 231548917}
     - target: {fileID: 2883174621819632016, guid: 27a06c932c1200c49961df3bceef27ab, type: 3}
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2883174621819632016, guid: 27a06c932c1200c49961df3bceef27ab, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.84
+      value: 1.62
       objectReference: {fileID: 0}
     - target: {fileID: 2883174621819632016, guid: 27a06c932c1200c49961df3bceef27ab, type: 3}
       propertyPath: m_LocalPosition.y
@@ -679,6 +679,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27a06c932c1200c49961df3bceef27ab, type: 3}
+--- !u!114 &231548917 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2191741912801034034, guid: 633a0761c593ac6448de9f19578cd4c4, type: 3}
+  m_PrefabInstance: {fileID: 1284280590}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61adfeccd2d86d147bc7c957d1f4b41d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &303006619
 GameObject:
   m_ObjectHideFlags: 0
@@ -2255,6 +2266,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 130359019390365044, guid: bb7e9a4e313680b43ad63dff27a89837, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 877678311}
     - target: {fileID: 4517679934675778110, guid: bb7e9a4e313680b43ad63dff27a89837, type: 3}
       propertyPath: m_Name
       value: Medkit_big_low Variant (4)
@@ -3252,6 +3267,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 130359019390365044, guid: bb7e9a4e313680b43ad63dff27a89837, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 877678311}
     - target: {fileID: 4517679934675778110, guid: bb7e9a4e313680b43ad63dff27a89837, type: 3}
       propertyPath: m_Name
       value: Medkit_big_low Variant (3)
@@ -3302,6 +3321,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb7e9a4e313680b43ad63dff27a89837, type: 3}
+--- !u!1 &938846965 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4517679934675778110, guid: bb7e9a4e313680b43ad63dff27a89837, type: 3}
+  m_PrefabInstance: {fileID: 886943751}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &938846970
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938846965}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0024148421, y: 0.0010602871, z: 0.0020093445}
+  m_Center: {x: 0.0000012310338, y: -0.00000014985598, z: 0.00009986071}
 --- !u!1001 &954597933
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3312,7 +3349,7 @@ PrefabInstance:
     - target: {fileID: 675598857, guid: 35d530de5fea45240987197fc196634b, type: 3}
       propertyPath: gunInventory
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 231548917}
     - target: {fileID: 415880611767461982, guid: 35d530de5fea45240987197fc196634b, type: 3}
       propertyPath: m_Name
       value: WeaponPickup_fullAutoRifle Variant
@@ -3798,6 +3835,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 130359019390365044, guid: bb7e9a4e313680b43ad63dff27a89837, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 877678311}
     - target: {fileID: 4517679934675778110, guid: bb7e9a4e313680b43ad63dff27a89837, type: 3}
       propertyPath: m_Name
       value: Medkit_big_low Variant
@@ -3900,7 +3941,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b2be76b5cbfc74b4d8017fb8d5a53c56, type: 2}
+  - {fileID: -3792589965421899600, guid: 7b34138eccf2b824da2eb10cf5828562, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4027,6 +4068,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1017949748}
   m_CullTransparentMesh: 1
+--- !u!1 &1047224050 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4517679934675778110, guid: bb7e9a4e313680b43ad63dff27a89837, type: 3}
+  m_PrefabInstance: {fileID: 742076857}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1047224055
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047224050}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0024148421, y: 0.0010602871, z: 0.0020093445}
+  m_Center: {x: 0.0000012310338, y: -0.00000014985598, z: 0.00009986071}
 --- !u!1 &1142057789
 GameObject:
   m_ObjectHideFlags: 0
@@ -4168,6 +4227,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 130359019390365044, guid: bb7e9a4e313680b43ad63dff27a89837, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 877678311}
     - target: {fileID: 4517679934675778110, guid: bb7e9a4e313680b43ad63dff27a89837, type: 3}
       propertyPath: m_Name
       value: Medkit_big_low Variant (2)
@@ -4408,7 +4471,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5693562837435072764, guid: dfd12a47eb028c342bc055d3eeeca5a2, type: 3}
       propertyPath: maxHP
-      value: 1000
+      value: 700
       objectReference: {fileID: 0}
     - target: {fileID: 5693562837435072765, guid: dfd12a47eb028c342bc055d3eeeca5a2, type: 3}
       propertyPath: player
@@ -4570,6 +4633,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 925740473, guid: 633a0761c593ac6448de9f19578cd4c4, type: 3}
+      propertyPath: ammoCount
+      value: 
+      objectReference: {fileID: 1275134506}
+    - target: {fileID: 2191741913012116214, guid: 633a0761c593ac6448de9f19578cd4c4, type: 3}
+      propertyPath: ammoCount
+      value: 
+      objectReference: {fileID: 1275134506}
+    - target: {fileID: 2191741913020097209, guid: 633a0761c593ac6448de9f19578cd4c4, type: 3}
+      propertyPath: ammoCount
+      value: 
+      objectReference: {fileID: 1275134506}
     - target: {fileID: 2785001313303116272, guid: 633a0761c593ac6448de9f19578cd4c4, type: 3}
       propertyPath: m_Name
       value: Player 1 Updated
@@ -4631,6 +4706,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 130359019390365044, guid: bb7e9a4e313680b43ad63dff27a89837, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 877678311}
     - target: {fileID: 4517679934675778110, guid: bb7e9a4e313680b43ad63dff27a89837, type: 3}
       propertyPath: m_Name
       value: Medkit_big_low Variant (1)
@@ -4778,6 +4857,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1360575644}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1415011078 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4517679934675778110, guid: bb7e9a4e313680b43ad63dff27a89837, type: 3}
+  m_PrefabInstance: {fileID: 1339187331}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1415011083
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415011078}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0024148421, y: 0.0010602871, z: 0.0020093445}
+  m_Center: {x: 0.0000012310338, y: -0.00000014985598, z: 0.00009986071}
 --- !u!1 &1508400236
 GameObject:
   m_ObjectHideFlags: 0
@@ -5470,6 +5567,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1 &2115490930 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4517679934675778110, guid: bb7e9a4e313680b43ad63dff27a89837, type: 3}
+  m_PrefabInstance: {fileID: 1194189886}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2115490935
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115490930}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0024148421, y: 0.0010602871, z: 0.0020093445}
+  m_Center: {x: 0.0000012310338, y: -0.00000014985598, z: 0.00009986071}
 --- !u!4 &543450652693720302
 Transform:
   m_ObjectHideFlags: 0
