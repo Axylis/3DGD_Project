@@ -11,12 +11,10 @@ public class PlayerMovement : MonoBehaviour
 
     void Awake()
     {
-        DontDestroyOnLoad(player);
         player.SetActive(true);
     }
     void Start()
     {
-        DontDestroyOnLoad(player);
         player.SetActive(true);
         Time.timeScale = 1;
     }

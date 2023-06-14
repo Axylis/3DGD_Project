@@ -5,7 +5,7 @@ using UnityEngine;
 public class MouseAim : MonoBehaviour
 {
     [SerializeField] LayerMask ground;
-    private Camera cam;
+     Camera cam;
     Vector3 aimLocation;
     // Start is called before the first frame update
     Vector3 yAxisRepositioning;

@@ -28,12 +28,12 @@ public class EnemyGunshot : MonoBehaviour
             if(timeToNextShot <= 0)
             {
                 bulletShot();
-                timeToNextShot = 1f;
+                timeToNextShot = 0.5f;
             }         
         }
         else
         {
-            timeToNextShot = 1f;
+            timeToNextShot = 0.5f;
         }
     }
 

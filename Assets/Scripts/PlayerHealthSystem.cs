@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerHealthSystem : MonoBehaviour
 {
-    Text HPIndicator;
+    public Text HPcounter;
     public float maxHP = 100;
     public float currentHP;
     float damage;
@@ -13,7 +13,7 @@ public class PlayerHealthSystem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        HPIndicator = GameObject.FindWithTag("HPIndicator").GetComponent<Text>();
+        HPcounter.text = "Player HP:" + currentHP;
         currentHP = maxHP;
     }
 

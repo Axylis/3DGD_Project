@@ -9,11 +9,11 @@ public class AmmoSystem : MonoBehaviour
     public int currentAmmo, reserveAmmo, magLimit;
     public GunInventory gunInventory;
     public Gunshot gunshot;
-    public TMP_Text ammoCount;
+    TMP_Text ammoCount;
     // Start is called before the first frame update
     void Start()
     {
-        DontDestroyOnLoad(ammoCount);
+        ammoCount = GameObject.FindGameObjectWithTag("AmmoCounter").GetComponent<TMP_Text>();
     }
 
     // Update is called once per frame
