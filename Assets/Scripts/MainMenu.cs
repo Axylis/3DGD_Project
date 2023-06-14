@@ -9,13 +9,14 @@ public class MainMenu : MonoBehaviour
 {
     public Button startGame, controls, backButton;
     public TMP_Text gameControls;
-    public AudioSource audioClick;
+    public AudioSource audioClick, menuMusic;
     // Start is called before the first frame update
     void Start()
     {
         startGame.onClick.AddListener(changeScene);
         controls.onClick.AddListener(helpMenu);
         backButton.onClick.AddListener(returnToMain);
+        menuMusic.Play();
     }
 
     void changeScene()
