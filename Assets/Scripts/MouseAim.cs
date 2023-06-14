@@ -18,7 +18,6 @@ public class MouseAim : MonoBehaviour
     void Update()
     {
         Aim();
-        Debug.Log(GetMousePosition());
     }
 
     private void Aim()

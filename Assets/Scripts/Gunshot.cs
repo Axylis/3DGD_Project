@@ -12,6 +12,7 @@ public class Gunshot : MonoBehaviour
     public GunInventory gunInventory;
     bool canShoot;
     public AmmoSystem[] ammo;
+    public AudioSource audioSource1, audioSource2, audioSource3;
 
 
     // Start is called before the first frame update
@@ -31,6 +32,8 @@ public class Gunshot : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.Mouse0) && ammo[0].currentAmmo > 0)
             {
                 bulletShot();
+                audioSource1.Play();
+                Debug.Log("Shot AK");
                 ammo[0].currentAmmo--;
             }
         }
@@ -41,6 +44,7 @@ public class Gunshot : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.Mouse0))
             {
                 StartCoroutine(SR_ROFLimiter());
+                audioSource3.Play();
                 ammo[2].currentAmmo--;
             }
         }
@@ -82,13 +86,16 @@ public class Gunshot : MonoBehaviour
                     if(enemyHealth != null && gunInventory.guns[0].activeInHierarchy == true)
                     {
                         enemyHealth.Damage(25f);
+                        
                     }
                     else if(enemyHealth != null && gunInventory.guns[1].activeInHierarchy == true)
                     {
+                        
                         enemyHealth.Damage(10f);
                     }
                     else if(enemyHealth != null && gunInventory.guns[2].activeInHierarchy == true)
                     {
+                        
                         enemyHealth.Damage(100f);
                     }
                 }
@@ -113,6 +120,7 @@ public class Gunshot : MonoBehaviour
     {
         canShoot = false;
         bulletShot();
+        audioSource2.Play();
         yield return new WaitForSecondsRealtime(0.06f);
         canShoot = true;
     }
@@ -123,5 +131,6 @@ public class Gunshot : MonoBehaviour
         yield return new WaitForSecondsRealtime(1f);
         canShoot = true;
     }
+
     
 }

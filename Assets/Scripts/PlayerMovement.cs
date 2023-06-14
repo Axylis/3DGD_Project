@@ -86,7 +86,6 @@ public class PlayerMovement : MonoBehaviour
             audioSource.Stop();
             soundPlaying = false;
         }
-        Debug.Log("Pos: " + this.transform.position);
     }
 
 }
