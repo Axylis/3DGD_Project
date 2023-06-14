@@ -10,6 +10,8 @@ public class EnemyAI : MonoBehaviour
     public bool playerDetected = false;
     [SerializeField] GameObject player;
 
+    public Animator animator;
+
     private float step;
 
     // Start is called before the first frame update
@@ -27,11 +29,11 @@ public class EnemyAI : MonoBehaviour
         {
             this.transform.LookAt(player.transform.position);
             this.transform.position = Vector3.MoveTowards(this.transform.position, player.transform.position, step);
-            this.GetComponent<Animator>().SetBool("stat_jalan", true);
+            animator.SetBool("stat_jalan", true);
         }
         else
         {
-            this.GetComponent<Animator>().SetBool("stat_jalan", false);
+            animator.SetBool("stat_jalan", false);
         }
     }
 
